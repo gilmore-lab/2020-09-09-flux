@@ -1,0 +1,294 @@
+---
+title: "Make your science open"
+subtitle: "You can do it"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+css: css/ioslides-wide.css
+bibliography: bib/refs.bib
+csl: bib/apa.csl
+logo: img/fluxlogo.png
+output: 
+  ioslides_presentation:
+    self_contained: false
+    widescreen: true
+    lib_dir: libs
+    incremental: false
+    transition: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Preliminaries
+
+---
+
+<div class="centered">
+```{r, out.width="200px"}
+# NSF
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG")
+# NICHD
+knitr::include_graphics("https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/ex89p5pm1bvck2ow3vwd")
+# NIDA
+knitr::include_graphics("https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg")
+# NIMH
+knitr::include_graphics("http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg")
+```
+
+</br>
+
+```{r, out.width="200px"}
+# Sloan
+knitr::include_graphics("https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png")
+# SRCD
+knitr::include_graphics("http://newsroom.unl.edu/announce/files/file77330.jpg")
+# LEGO
+knitr::include_graphics("https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg")
+```
+</div>
+
+---
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/>
+<img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/>
+<img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/>
+<img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/>
+<img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/>
+<img src="img/sleic.jpg" height=150px/></br>
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
+</div>
+
+<!-- Gilmore photo biography -->
+
+## Agenda
+
+- An open science manifesto 
+- Databrary.org
+- Toward a strengthened science of brain & behavioral development
+
+# An open science manifesto
+
+## Open science accelerates discovery
+
+- Shows your work
+- Data + analyses code + tasks
+- What's the effect size for manipulation X?
+
+## Closed science *slows* discovery
+
+- Wastes energy, time, money
+- How big is the 'file drawer effect'?
+
+## Open science strengthens inference
+
+- Improves reproducibility
+- Permits verification, re-analysis, meta-analysis
+- Boosts sample sizes & increases power
+
+## Closed science *weakens* inference
+
+## Will emphasizing transparency and openness in science...
+
+> "*...yield more robust and reliable findings that others can readily build upon.*"
+
+[[@Srcd2019-hg]](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+## Is open sharing of research data and materials...
+
+> "*essential for the conduct of research and its application to practice and policy.*" 
+
+[[@Srcd2019-hg]](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+---
+
+```{r, fig.align='center', fig.cap='https://www.srcd.org/policy-scientific-integrity-transparency-and-openness', out.width='800px'}
+knitr::include_graphics("img/srcd-policy.png")
+```
+
+---
+
+> "*The advancement of detailed and diverse knowledge about the development of the world’s children is essential for improving the health and well-being of humanity.*"
+
+[[@Srcd2019-hg]](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+## Yes, but...
+
+- Sharing difficult, time-consuming
+- Openness not yet rewarded, highly valued
+- I'll change when.. the field does/I get tenure/I'm finished with my data...
+- I can't share because...I don't have permission from institution/participants/collaborators
+
+---
+
+> "*The first principle is that you must not fool yourself, and you are the easiest one to fool.*"
+
+-- Richard P. Feynmann
+
+# Databrary.org
+
+## Data about people requires protection
+
+- Breaches of *privacy*
+- Breaches of *confidentiality*
+- How are data collected?
+- How are data stored and shared?
+
+## Video and audio data pose special risks
+
+- Faces & voices
+- Names, personal locations
+- Behaviors
+
+## Video data have unique research potential
+
+as **data**...
+
+- Spatially & temporally dense samples of behavior
+- "Outputs" of biological processes
+
+[[@Adolph_KE_Gilmore_RO_Kennedy_JL2017-va]](https://www.apa.org/science/about/psa/2017/10/video-data)
+
+---
+
+and as **documentation**...
+
+- How procedures are [actually done](https://www.play-project.org/collection.html)
+- Computer-based [task displays](https://nyu.databrary.org/volume/31)
+
+[[@Gilmore2017-wd]](https://doi.org/10.1038/s41562-017-0128)
+
+## How to protect against risk & realize potential?
+
+---
+
+<iframe src="https://databrary.org" height=600px width=1000px>
+</iframe>
+
+---
+
+```{r}
+db_stats <- databraryapi::get_db_stats()
+```
+
+- World's only data library specialized for storing and sharing video and audio
+- Hosted at New York University
+- Opened 2014
+- `r db_stats$institutions` institutions; `r db_stats$investigators + db_stats$affiliates` researchers; `r format(db_stats$hours, digits = 5, decimal.mark=".", big.mark=",", small.mark=".", small.interval=2)` hours of video + other data; `r db_stats$datasets_shared` shared projects
+
+## How Databrary protects personal data
+
+- Data shared only with participant permission (& IRB approval)
+- [Template language](https://www.databrary.org/resources/templates/release-template.html), scripts and [procedure documentation](https://www.databrary.org/video/example-video-1.mp4)
+
+## Open sharing (but with restricted audiences)
+
+- Researchers require institutional authorization
+- [Formal access agreement](https://www.databrary.org/resources/agreement.html)
+- Site-wide access, not dataset-specific
+- Data use and contribution
+
+## Virtues
+
+- Restricted data sharing has long track-record
+- Meaningful sharing permission; clarifies nature of risk
+- Empowers participants
+- Researchers & institutions determine what to share & when
+
+---
+
+- Open, but not public, sharing
+- Researchers, Institutions need not reinvent wheels
+- More discoverable than personal websites or institutional repositories
+- More secure than public data and materials services or journal web pages
+- Allows smaller-scale programs of research to contribute
+
+---
+
+- Consistent curation makes reuse easier
+- Works for data beyond video
+- Secure data interaction via API
+
+---
+
+```{r, echo=TRUE}
+databraryapi::get_db_stats()
+```
+
+<https://github.com/PLAY-behaviorome/databraryapi>
+
+## Databrary 2.0
+
+- Updated policy framework
+- Rewriting in Node.js, Hasura/GraphQL, Vue.js/Quasar
+
+# Toward a strengthened science of brain & behavioral development
+
+## Embrace secondary re-use
+
+- [ABCD](https://abcdstudy.org/), [HBCD](https://heal.nih.gov/research/infants-and-children/healthy-brain), [NDA](https://nda.nih.gov/)
+
+## Share your own data and materials
+
+- [Databrary](https://databrary.org)
+  - Start with procedure videos, displays?
+- [OpenNeuro](https://openneuro.org)
+- [OSF](https://osf.io)
+- [Github](https://github.com)/[Gitlab](https://gitlab.com)
+
+## Support openness in colleagues
+
+- Cite colleagues' data & materials
+  - e.g., [[@r-lang]](https://www.R-project.org/); [[@rmarkdown-bk]](https://bookdown.org/yihui/rmarkdown); [[@rmarkdown-pkg]](rmarkdown-pkg); [[@databraryapi]](http://github.com/PLAY-behaviorome/databraryapi)]
+- Add open science contributions to your website, CV, etc.
+
+## You can do it!
+
+### Make your science open
+
+
+```{r, echo=FALSE}
+library(qrcode)
+png("img/talk-qr.png")
+qrcode_gen("https://gilmore-lab.github.io/2020-09-09-flux/")
+dev.off()
+```
+
+---
+
+<div class="centered">
+<video width="800" loop data-autoplay>
+  <source src="https://github.com/gilmore-lab/DEVSEC-2018/blob/master/mov/databrary-splash.mp4?raw=true" type="video/mp4">
+  </video>
+rog1\@psu.edu</br>
+gilmore-lab.github.io</br></br>
+<img src="img/talk-qr.png" height="200px">
+</div>
+
+# Resources
+
+## Software
+
+<!-- Scrolling slides -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using R Markdown.
+The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/2020-09-02-flux>.
+Information about the R Session that produced the code is as follows:
+```{r session-info}
+sessionInfo()
+```
+
+## References
