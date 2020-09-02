@@ -22,30 +22,20 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Preliminaries
 
----
+## Support {.flexbox .vcenter}
 
 <div class="centered">
-```{r, out.width="200px"}
-# NSF
-knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG")
-# NICHD
-knitr::include_graphics("https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/ex89p5pm1bvck2ow3vwd")
-# NIDA
-knitr::include_graphics("https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg")
-# NIMH
-knitr::include_graphics("http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg")
-```
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=100px>
+<img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/ex89p5pm1bvck2ow3vwd" height=100px>
+<img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=100px/>
+<img src="https://media-exp1.licdn.com/dms/image/C560BAQFSW34bYyTRNQ/company-logo_200_200/0?e=2159024400&v=beta&t=dihthYdgNEVbHT3KPzcn7cp_CCTmg42M5-qQ43jK_aE" height=100px/>
+<img src="https://pbs.twimg.com/profile_images/880782598418694144/YzIrCofm_400x400.jpg" height=100px/>
 </br>
-
-```{r, out.width="200px"}
-# Sloan
-knitr::include_graphics("https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png")
-# SRCD
-knitr::include_graphics("http://newsroom.unl.edu/announce/files/file77330.jpg")
-# LEGO
-knitr::include_graphics("https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg")
-```
+<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=100px>
+<img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=100px/>
+<img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=100px />
+<img src="https://nyu.databrary.org/web/images/grants/jsmf.png" height=100px/></br>
+<img src="https://nyu.databrary.org/web/images/grants/darpa.png" height=100px/>
 </div>
 
 ---
@@ -79,17 +69,19 @@ knitr::include_graphics("https://www.unicef.org.hk/wp-content/uploads/2017/08/Lo
 ## Closed science *slows* discovery
 
 - Wastes energy, time, money
+- Hasn't somebody tried X before?
 - How big is the 'file drawer effect'?
 
 ## Open science strengthens inference
 
 - Improves reproducibility
+- Reveals errors faster
 - Permits verification, re-analysis, meta-analysis
 - Boosts sample sizes & increases power
 
 ## Closed science *weakens* inference
 
-## Will emphasizing transparency and openness in science...
+## But will emphasizing transparency and openness in science...
 
 > "*...yield more robust and reliable findings that others can readily build upon.*"
 
@@ -117,8 +109,9 @@ knitr::include_graphics("img/srcd-policy.png")
 
 - Sharing difficult, time-consuming
 - Openness not yet rewarded, highly valued
+- Collecting new data better (for me) than cleaning-up finished studies to share them
 - I'll change when.. the field does/I get tenure/I'm finished with my data...
-- I can't share because...I don't have permission from institution/participants/collaborators
+- I can't share because...I don't have permission from IRB/participants/collaborators
 - I own my data (don't I?)
 
 ---

@@ -120,20 +120,16 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2020-09-02 09:43:57</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2020-09-02 09:55:45</p>
           </hgroup>
   </slide>
 
 <slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Preliminaries</h2></hgroup><article  id="preliminaries">
 
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+</article></slide><slide class=""><hgroup><h2>Support</h2></hgroup><article  class="flexbox vcenter" id="support">
 
 <div class="centered">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" width="200px" /><img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/ex89p5pm1bvck2ow3vwd" width="200px" /><img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" width="200px" /><img src="http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" width="200px" /></p>
-
-<p></br></p>
-
-<p><img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" width="200px" /><img src="http://newsroom.unl.edu/announce/files/file77330.jpg" width="200px" /><img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" width="200px" /></p></div>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=100px> <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/ex89p5pm1bvck2ow3vwd" height=100px> <img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=100px/> <img src="https://media-exp1.licdn.com/dms/image/C560BAQFSW34bYyTRNQ/company-logo_200_200/0?e=2159024400&v=beta&t=dihthYdgNEVbHT3KPzcn7cp_CCTmg42M5-qQ43jK_aE" height=100px/> <img src="https://pbs.twimg.com/profile_images/880782598418694144/YzIrCofm_400x400.jpg" height=100px/> </br> <img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=100px> <img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=100px/> <img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=100px /> <img src="https://nyu.databrary.org/web/images/grants/jsmf.png" height=100px/></br> <img src="https://nyu.databrary.org/web/images/grants/darpa.png" height=100px/></p></div>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
@@ -164,6 +160,7 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>Wastes energy, time, money</li>
+<li>Hasn’t somebody tried X before?</li>
 <li>How big is the &lsquo;file drawer effect&rsquo;?</li>
 </ul>
 
@@ -171,13 +168,14 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>Improves reproducibility</li>
+<li>Reveals errors faster</li>
 <li>Permits verification, re-analysis, meta-analysis</li>
 <li>Boosts sample sizes &amp; increases power</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Closed science <em>weakens</em> inference</h2></hgroup><article  id="closed-science-weakens-inference">
 
-</article></slide><slide class=""><hgroup><h2>Will emphasizing transparency and openness in science…</h2></hgroup><article  id="will-emphasizing-transparency-and-openness-in-science">
+</article></slide><slide class=""><hgroup><h2>But will emphasizing transparency and openness in science…</h2></hgroup><article  id="but-will-emphasizing-transparency-and-openness-in-science">
 
 <blockquote>
 <p>&ldquo;<em>…yield more robust and reliable findings that others can readily build upon.</em>&rdquo;</p>
@@ -217,8 +215,9 @@ slide:not(.current) .plotly.html-widget{
 <ul>
 <li>Sharing difficult, time-consuming</li>
 <li>Openness not yet rewarded, highly valued</li>
+<li>Collecting new data better (for me) than cleaning-up finished studies to share them</li>
 <li>I’ll change when.. the field does/I get tenure/I’m finished with my data…</li>
-<li>I can’t share because…I don’t have permission from institution/participants/collaborators</li>
+<li>I can’t share because…I don’t have permission from IRB/participants/collaborators</li>
 <li>I own my data (don’t I?)</li>
 </ul>
 
@@ -326,11 +325,11 @@ related data</span> from research on humans</li>
 <pre class = 'prettyprint lang-r'>databraryapi::get_db_stats()</pre>
 
 <pre >##                  date investigators affiliates
-## 1 2020-09-02 09:43:57          1187        544
-##   institutions datasets_total datasets_shared
-## 1          588           1136             575
-##   n_files    hours       TB
-## 1  125481 58835.58 26.15999</pre>
+## 1 2020-09-02 09:55:45          1187        544
+##   institutions datasets_total datasets_shared n_files
+## 1          588           1136             575  125481
+##      hours       TB
+## 1 58835.58 26.15999</pre>
 
 <p><a href='https://play-behaviorome.github.io/databraryapi/' title=''><span class="cite">(Gilmore, 2020)</span></a></p>
 
@@ -442,8 +441,8 @@ slides > slide:not(.nobackground):after {
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] stats     graphics  grDevices utils    
-## [5] datasets  methods   base     
+## [1] stats     graphics  grDevices utils     datasets 
+## [6] methods   base     
 ## 
 ## other attached packages:
 ## [1] qrcode_0.1.1
@@ -462,9 +461,9 @@ slides > slide:not(.nobackground):after {
 ## [21] compiler_3.6.2     htmltools_0.5.0   
 ## [23] knitr_1.29</pre>
 
-</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="unnumbered">
+</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  class="unnumbered" id="references">
 
-<div id="refs" class="references hanging-indent">
+<div class="references hanging-indent" id="refs">
 <div id="ref-Adolph_KE_Gilmore_RO_Kennedy_JL2017-va">
 <p>Adolph, K.E., Gilmore, R.O., &amp; Kennedy, J.L. (2017). Video as data and documentation will improve psychological science. <a href='https://www.apa.org/science/about/psa/2017/10/video-data' title=''>https://www.apa.org/science/about/psa/2017/10/video-data</a>. Retrieved from <a href='https://www.apa.org/science/about/psa/2017/10/video-data' title=''>https://www.apa.org/science/about/psa/2017/10/video-data</a></p></div>
 
