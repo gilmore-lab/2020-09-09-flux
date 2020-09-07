@@ -60,6 +60,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # An open science manifesto
 
+---
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://mathshistory.st-andrews.ac.uk/Biographies/Feynman/thumbnail.jpg")
+```
+
+> "*The first principle is that you must not fool yourself, and you are the easiest one to fool.*"
+
+-- Richard P. Feynmann
+
 ## Open science accelerates discovery
 
 - Shows your work
@@ -113,12 +123,6 @@ knitr::include_graphics("img/srcd-policy.png")
 - I'll change when.. the field does/I get tenure/I'm finished with my data...
 - I can't share because...I don't have permission from IRB/participants/collaborators
 - I own my data (don't I?)
-
----
-
-> "*The first principle is that you must not fool yourself, and you are the easiest one to fool.*"
-
--- Richard P. Feynmann
 
 # Databrary.org
 
