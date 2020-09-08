@@ -73,7 +73,7 @@ knitr::include_graphics("https://mathshistory.st-andrews.ac.uk/Biographies/Feynm
 ## Open science accelerates discovery
 
 - Shows your work
-- Data + analyses code + tasks
+- Data + analysis code + tasks
 - What's the effect size for manipulation X?
 
 ## Closed science *slows* discovery
@@ -128,7 +128,7 @@ knitr::include_graphics("img/srcd-policy.png")
 
 ---
 
-<iframe src="https://databrary.org" height=600px width=1000px>
+<iframe src="https://nyu.databrary.org" height=600px width=1000px>
 </iframe>
 
 ---
@@ -180,7 +180,7 @@ and as **documentation**...
 
 ## Virtues
 
-- Restricted data sharing has long track-record (e.g., [ICSPR](https://www.icpsr.umich.edu/))
+- Restricted data sharing has long track-record (e.g., [ICPSR](https://www.icpsr.umich.edu/))
 - Meaningful [sharing permission](https://www.databrary.org/support/irb/release-levels.html); clarifies nature of risk
 - Empowers participants
 - Researchers & institutions determine what to share & when
@@ -216,7 +216,9 @@ databraryapi::get_db_stats()
 
 ## Embrace secondary re-use
 
-- [ABCD](https://abcdstudy.org/), [HBCD](https://heal.nih.gov/research/infants-and-children/healthy-brain), [NDA](https://nda.nih.gov/)
+- [ABCD](https://abcdstudy.org/) 
+- [HBCD](https://heal.nih.gov/research/infants-and-children/healthy-brain)
+- [NDA](https://nda.nih.gov/)
 
 ## Use video 
 
@@ -239,14 +241,15 @@ databraryapi::get_db_stats()
 ## Change the scientific culture...
 
 - Cite colleagues' data & materials
-  - e.g., [[@r-lang]](https://www.R-project.org/); [[@rmarkdown-bk]](https://bookdown.org/yihui/rmarkdown); [[@rmarkdown-pkg]](rmarkdown-pkg); [[@databraryapi]](http://github.com/PLAY-behaviorome/databraryapi)]
+  - e.g., [[@r-lang]](https://www.R-project.org/); [[@rmarkdown-bk]](https://bookdown.org/yihui/rmarkdown); [[@rmarkdown-pkg]](rmarkdown-pkg); [[@databraryapi]](http://github.com/PLAY-behaviorome/databraryapi)
 - Add open science contributions to your website, CV, etc.
 
 ## You can do it!
 
-### Make your science open
+### Make your science open!
 
-```{r, echo=FALSE}
+```{r, include=FALSE, echo=FALSE, message=FALSE}
+# Change `include=FALSE` to `TRUE` to render the QR code image.
 library(qrcode)
 png("img/talk-qr.png")
 qrcode_gen("https://gilmore-lab.github.io/2020-09-09-flux/")
