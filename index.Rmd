@@ -149,6 +149,12 @@ knitr::include_graphics("img/srcd-policy.png")
     - I don't have permission from IRB/participants/collaborators
 - I own my data...
     - don't I?
+    
+---
+
+```{r, fig.cap='[[@Gilmore2020-sl]](http://dx.doi.org/10.1111/cdep.12360)', out.width='800px'}
+knitr::include_graphics("img/gilmore-cole-et-al.png")
+```
 
 # Databrary.org
 
