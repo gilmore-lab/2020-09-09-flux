@@ -260,13 +260,14 @@ databraryapi::get_db_stats()
 - Updated policy framework
 - Rewriting in Node.js, Hasura/GraphQL, Vue.js/Quasar
 
-# Let's strengthen developmental neuroscience
+# Let's open (& strengthen) developmental neuroscience
 
 ## Embrace secondary re-use
 
 - [ABCD](https://abcdstudy.org/) 
 - [HBCD](https://heal.nih.gov/research/infants-and-children/healthy-brain)
 - [NDA](https://nda.nih.gov/)
+- Make productive use of large public investments
 
 ## Use video 
 
