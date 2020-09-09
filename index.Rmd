@@ -14,10 +14,17 @@ output:
     lib_dir: libs
     incremental: false
     transition: default
+params:
+  db_login: "email@provider.com"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
+databraryapi::login_db(params$db_login)
+```
+
+```{r login-databrary, echo=FALSE, message=FALSE}
+x <- databraryapi::login_db(params$db_login)
 ```
 
 # Preliminaries
@@ -347,6 +354,7 @@ The code and materials used to generate the slides may be found at <https://gith
 Information about the R Session that produced the code is as follows:
 ```{r session-info}
 sessionInfo()
+databraryapi::logout_db()
 ```
 
 ## References {.smaller}
